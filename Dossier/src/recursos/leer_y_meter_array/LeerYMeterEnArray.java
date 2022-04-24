@@ -11,14 +11,12 @@ public class LeerYMeterEnArray {
             arrNums[i] = sc.nextInt();
         }
 
-        
         String linea = sc.nextLine();
         String[] arr = linea.split(" ");
         int[] arrNums1 = new int[arr.length];
         for(int i = 0; i < arr.length; i++){
             arrNums1[i] = Integer.parseInt(arr[i]);
         }
-
 
     }
 }

@@ -12,8 +12,6 @@ public class SortedMapMap {
         mapa.put("arbol", new String[]{"María", "Palomo"});
         mapa.put("abaco", new String[]{"Francisca", "Palomo"});
 
-
-
         for(Map.Entry<String, String[]> persona : mapa.entrySet()){
             System.out.println(persona.getKey() + " " + persona.getValue()[0] + " " + persona.getValue()[1]);
         }

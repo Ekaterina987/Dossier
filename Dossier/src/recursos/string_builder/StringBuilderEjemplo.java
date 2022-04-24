@@ -2,12 +2,13 @@ package recursos.string_builder;
 
 public class StringBuilderEjemplo {
     public static void main(String args[]){
+        String abcba = "abcba";
         StringBuilder strBuilder = new StringBuilder();
-        strBuilder.append("Hola");
+        strBuilder.append(abcba);
         strBuilder.reverse();
         System.out.println(strBuilder);
-        String aloh = "aloH";
-        System.out.println(aloh.equals(strBuilder.toString()) ? "coinciden":"no coinciden");
+
+        System.out.println(abcba.equals(strBuilder.toString()) ? "coinciden":"no coinciden");
 
     }
 }
