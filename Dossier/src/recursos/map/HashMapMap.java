@@ -13,5 +13,6 @@ public class HashMapMap {
         for(Map.Entry<Integer, String[]> persona : mapa.entrySet()){
             System.out.println(persona.getKey() + " " + persona.getValue()[0] + " " + persona.getValue()[1]);
         }
+
     }
 }
