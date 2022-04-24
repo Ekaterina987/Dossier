@@ -8,6 +8,7 @@ import java.util.List;
 public class ArrayListColeccion {
     public static void main(String[] args){
         List<Persona> personas = new ArrayList<>();
+
         personas.add(new Persona("Juan", 15));
         personas.add(new Persona("Juan", 13));
         personas.add(new Persona("Alicia", 15));
@@ -17,6 +18,9 @@ public class ArrayListColeccion {
             Persona actual = it.next();
             System.out.println("Nombre: " + actual.getNombre() + ", Edad: " + actual.getEdad());
         }
+        Persona lorena = new Persona("Lorena", 29);
+        personas.add(lorena);
+        System.out.println(personas.contains(lorena) ? "Está Lorena" : "No está lorena");
 
     }
 
