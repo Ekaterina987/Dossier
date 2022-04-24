@@ -1,4 +1,4 @@
-package recursos.colecciones;
+package recursos.map;
 
 import java.util.HashMap;
 import java.util.Map;
