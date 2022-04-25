@@ -3,16 +3,9 @@ package recursos.formato_fecha;
 public class FormatoFecha {
 
     public static void main(String[] args){
-        formateo();
+        formateo(10,3,30,0);
     }
-
-    private static void formateo(){
-
-        int dias = 10;
-        int horas = 3;
-        int min = 30;
-        int seg = 0;
+    private static void formateo(int dias, int horas, int min, int seg){
         System.out.printf("%d %02d:%02d:%02d%n", dias, horas, min, seg);
-
     }
 }

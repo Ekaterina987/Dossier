@@ -3,7 +3,9 @@ package recursos.formato_fecha;
 public class Calculo_Horas_De_Segundos {
     public static void main(String[] args) {
 
-        long segundosTotales = 18640;
+        calcularHora(18640);
+    }
+    private static void calcularHora(long segundosTotales){
         int dias = (int) (segundosTotales / 86400);
         int horas = (int) (segundosTotales / 3600) % 24;
         int minutos = (int) (segundosTotales / 60) % 60;

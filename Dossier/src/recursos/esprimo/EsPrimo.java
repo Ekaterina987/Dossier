@@ -2,17 +2,25 @@ package recursos.esprimo;
 
 public class EsPrimo {
     public static void main(String[] args) {
-        int num = 7;
-        boolean primo = true;
-        boolean salir = false;
-        if(num==1){
-            primo = false;
+        System.out.println(esPrimo(2));
+    }
+    public static boolean esPrimo (long numero) {
+        boolean primo=true;
+        numero = Math.abs(numero);
+        if (numero==0 || numero==1) {
+            return false;
         }
-        for(int i = 2; i <= (num/2)&&!salir; i++){
-            if(num%i==0){
-                primo=true;
+        else if (numero>2) {
+            long divisor=2;
+            while (primo && divisor<=Math.sqrt(numero)) {
+                if (numero%divisor==0) {
+                    primo = false;
+                }
+                divisor++;
             }
         }
-        System.out.println(primo?"Es primo":"No es primo");
+        return primo;
     }
+
 }
+
